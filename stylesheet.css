@@ -163,3 +163,102 @@ span.highlight {
 @media (prefers-reduced-motion: reduce) {
   .ever { transition: none; }
 }
+
+.sidenav {
+  height: 100%;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+/* 기본 아이콘 색상 (라이트 모드) */
+.icon {
+  font-size: 1.25em;
+  color: black;
+}
+
+/* 다크 모드일 때 아이콘 색상 */
+.dark-mode .icon {
+  color: white;
+}
+
+/* ===== Dark Mode Toggle Button ===== */
+#darkModeToggle {
+  position: fixed;
+  bottom: 20px;       /* 아래 여백 */
+  right: 20px;        /* 오른쪽 여백 */
+  left: auto !important;   /* 혹시 left가 잡히면 무효화 */
+  z-index: 9999;      /* 항상 위로 */
+  background: rgba(0,0,0,0.08);
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.6rem;  /* 이모지 크기 */
+  line-height: 48px;
+  text-align: center;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+#darkModeToggle:hover {
+  transform: scale(1.1);
+  background: rgba(0,0,0,0.15);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+.dark-mode #darkModeToggle {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+.dark-mode #darkModeToggle:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.dark-mode a { color: #8ab4f8; }
+.dark-mode a:hover, .dark-mode a:focus { color: #f1b351; }
+
