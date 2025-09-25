@@ -262,3 +262,71 @@ body {
 .dark-mode a { color: #8ab4f8; }
 .dark-mode a:hover, .dark-mode a:focus { color: #f1b351; }
 
+/* ===== Education 섹션 ===== */
+.edu-list { 
+  margin-top: 8px; 
+}
+
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.dark-mode .edu-item { 
+  border-color: rgba(255,255,255,0.14); 
+}
+.edu-item:last-child {
+  border-bottom: none;
+}
+
+.edu-left h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.25;
+  color: #202124;            /* 라이트 본문 */
+}
+.dark-mode .edu-left h4 {
+  color: #e8eaed;            /* 다크 본문 */
+}
+
+.edu-left .subtitle {
+  margin: 6px 0 0;
+  color: #555;               /* 라이트 보조 */
+}
+.dark-mode .edu-left .subtitle { 
+  color: #bdc1c6;            /* 다크 보조 */
+}
+
+.edu-left .note {
+  margin: 6px 0 0;
+  font-style: italic;
+  color: #777;               /* 라이트 비고 */
+}
+.dark-mode .edu-left .note { 
+  color: #9aa0a6;            /* 다크 비고 */
+}
+
+.edu-right {
+  white-space: nowrap;
+  color: #1772d0;            /* 라이트: 링크 톤 */
+  font-weight: 500;
+  font-size: 18px;
+}
+.dark-mode .edu-right {
+  color: #8ab4f8;            /* 다크: 하이퍼링크와 동일 */
+}
+
+@media (max-width: 640px) {
+  .edu-item { 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  .edu-right { 
+    margin-top: 4px; 
+  }
+}
+
