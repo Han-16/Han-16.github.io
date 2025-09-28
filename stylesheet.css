@@ -330,3 +330,24 @@ body {
   }
 }
 
+ol {
+  padding-left: 2em;            
+  list-style-position: inside;  
+}
+
+ol li::marker {
+  content: counter(list-item) ".  ";
+}
+
+ol {
+  padding-left: 2em;            
+  list-style-position: inside;  
+}
+
+ol li::marker {
+  content: counter(list-item) ".  ";
+}
+
+.pub-details {
+  margin-left: 1em;
+}
