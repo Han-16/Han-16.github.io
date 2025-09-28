@@ -270,7 +270,7 @@ body {
 .edu-item {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 24px;
   padding: 14px 0;
   border-bottom: 1px solid rgba(0,0,0,0.08);
@@ -311,10 +311,9 @@ body {
 }
 
 .edu-right {
-  white-space: nowrap;
-  color: #1772d0;            /* 라이트: 링크 톤 */
+  color: #1a73e8;
+  text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
 }
 .dark-mode .edu-right {
   color: #8ab4f8;            /* 다크: 하이퍼링크와 동일 */
@@ -331,16 +330,7 @@ body {
 }
 
 ol {
-  padding-left: 2em;            
-  list-style-position: inside;  
-}
-
-ol li::marker {
-  content: counter(list-item) ".  ";
-}
-
-ol {
-  padding-left: 2em;            
+  padding-left: 1.5em;            
   list-style-position: inside;  
 }
 
@@ -350,4 +340,36 @@ ol li::marker {
 
 .pub-details {
   margin-left: 1em;
+}
+
+
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.award-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.award-left .icon {
+  font-size: 18px;
+}
+
+.award-left .text {
+  font-size: 16px;
+}
+
+.award-right a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.award-right a:hover {
+  text-decoration: underline;
 }
