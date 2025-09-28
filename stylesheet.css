@@ -314,6 +314,7 @@ body {
   color: #1a73e8;
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
 }
 .dark-mode .edu-right {
   color: #8ab4f8;            /* 다크: 하이퍼링크와 동일 */
