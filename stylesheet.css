@@ -337,9 +337,6 @@ ol {
   list-style-position: inside;  
 }
 
-ol li::marker {
-  content: counter(list-item) ".  ";
-}
 
 .pub-details {
   margin-left: 1em;
@@ -376,3 +373,12 @@ ol li::marker {
 .award-right a:hover {
   text-decoration: underline;
 }
+/* 
+.avatar{
+  width: 100%;
+  max-width: 280px;     
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;    
+  border-radius: 50%;   
+  display: block;       
+} */

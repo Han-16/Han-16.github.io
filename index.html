@@ -11,6 +11,19 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
   </head>
 
   <body>
@@ -26,7 +39,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
+                <p class="name" style="text-align: center; font-size: 35px;">
                   Byeongkyu Han
                 </p>
                 <p style="text-align: center;">
@@ -57,7 +70,7 @@
               </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/profile_1.JPG"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile_1.JPG" class="hoverZoomLink"></a>
+                <a href="images/white.JPG"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/white.JPG" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -67,9 +80,9 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>About</h2>
                 <p style="text-align: justify; text-justify: inter-word;">
-                  I am a master's student at Kookmin University advised by Prof. <a href="https://sites.google.com/site/jihyekimkmu/">Jihye Kim</a>. 
+                  I am a master's student at Kookmin University advised by Prof. <a href="https://sites.google.com/site/jihyekimkmu/">Jihye Kim</a> and <a href="https://sites.google.com/site/hyunokoh/">Hyunok Oh</a>.
                   My research interests lie in the intersection of cryptography and blockchain technology.
-                  I specialize in applied cryptography, with a particular focus on SNARKs and privacy-preserving AI. I'm passionate about leveraging cryptography to solve real-world problems in trust, integrity, and data privacy.
+                  My current interests include zk-SNARKs and privacy-preserving AI. I'm passionate about leveraging cryptography to solve real-world problems in trust, integrity, and data privacy.
                 </p>
               </td>
             </tr>
@@ -87,7 +100,9 @@
                       <h3>Kookmin University</h3>
                       <p class="subtitle">
                         M.S. in Electronics Engineering (Advisor: 
-                        <a href="https://sites.google.com/site/jihyekimkmu/">Jihye Kim</a>)
+                        <a href="https://sites.google.com/site/jihyekimkmu/">Jihye Kim</a>,
+                        <a href="https://sites.google.com/site/hyunokoh/">Hyunok Oh</a>
+                        )
                       </p>
                     </div>
                     <div class="edu-right">Mar 2024 – Present</div>
@@ -97,7 +112,7 @@
                     <div class="edu-left">
                       <h3>Kookmin University</h3>
                       <p class="subtitle">
-                        B.S. in Department of AI, Big Data &amp; Management (minor: Software)
+                        B.B.A in AI, Big Data, and Management; Minor in Computer Science
                       </p>
                     </div>
                     <div class="edu-right">Mar 2019 – Feb 2024</div>
@@ -112,6 +127,8 @@
 
           <hr>
 
+          
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
                         margin-right:auto;margin-left:auto;">
             <tbody>
@@ -124,21 +141,124 @@
           </table>
 
           <table>
-            <ol>
+            <ul style="line-height: 1.6;">
               <li>
+                <ul style="margin-left: -20px;">
+                  <b>Beyond the MSM: Efficient Proofs of Group Element Aggregation in zk-SNARK Circuits</b>
+                <div class="pub-details">
+                  Kyeongtae Lee, <u>Byeongkyu Han</u>, 
+                  <a href="https://sites.google.com/site/jihyekimkmu/">Jihye Kim</a>, 
+                  <a href="https://sites.google.com/site/hyunokoh">Hyunok Oh</a> <br> 
+                  <em>[Working In Progress]</em>
+                </div>
+                </ul>
+              </li>
+              <li>
+                <ul style="margin-left: -20px;">
                   <b>Aegis: Scalable Privacy-preserving CBDC Framework with Dynamic Proof of Liabilities</b>
                 <div class="pub-details">
-                  Gweonho Jeong, Jaewoong Lee, Minhae Kim, <u>Byeongkyu Han</u>, 
+                  Gweonho Jeong, Jaewoong Lee*, Minhae Kim*, <u>Byeongkyu Han*</u>, 
                   <a href="https://sites.google.com/site/jihyekimkmu/">Jihye Kim</a>, 
-                  <a href="https://sites.google.com/site/hyunokoh">Hyunok Oh</a> <br>
+                  <a href="https://sites.google.com/site/hyunokoh">Hyunok Oh</a> <br> 
                   <em>[Under Review]</em>,
-                  <a href="https://github.com/snp-labs/Aegis" target="_blank" rel="noopener noreferrer">[code]</a>, 
-                  <a href="https://eprint.iacr.org/2025/539" target="_blank" rel="noopener noreferrer">[ePrint]</a>
+                  <a href="https://eprint.iacr.org/2025/539" target="_blank" rel="noopener noreferrer">[paper]</a>
+                  <a href="https://github.com/snp-labs/Aegis" target="_blank" rel="noopener noreferrer">[code]</a>
+                  (<i>* Equal contribution</i>)
                 </div>
+                </ul>
               </li>
-            </ol>
           </table>
+
+          <hr>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
+                        margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Projects</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <ul style="line-height: 1.6;">
+
+              <!-- Project 1 -->
+              <li>
+                <strong>Efficient Aggregation of Group Elements for zk-SNARK Circuits</strong> (Sep 2025 – Present)
+                <ul style="margin-left: -20px;">
+                  <li>Proposed an efficient proof method for aggregating group elements in zk-SNARK circuit.</li>
+                  <li>Combined random permutation with small-prime-based accumulation instead of MSM.</li>
+                  <!-- <li>Reduced the CRS from $O(N)$ to $O(\frac{N}{M})$ by refining the Pianist protocol ($N$: circuit size; $M$: machines).</li> -->
+                  <li>Reduced the CRS from $O(N)$ to $O(\frac{N}{M})$ by refining the Pianist protocol ($N$: circuit size; $M$: # of machines).</li>
+                  <li>Applied the proposed Efficient Aggregate Scheme, mitigating the overhead from CRS reduction.</li>
+                </ul>
+              </li>
+
+              <!-- Project 2 -->
+              <li>
+                <strong>A Privacy-Preserving STO System with Real-Time PoL</strong> (Mar 2024 – Oct 2024)
+                <ul style="margin-left: -20px;">
+                  <li>Proposed an STO system providing privacy-preserving, real-time Proof of Liability (PoL), and high-throughput trading.</li>
+                  <li>Extended <b>Aegis</b> to STO and designed the system to comply with Korean regulatory requirements.</li>
+                  <li>Achieved proof generation of 0.5s for 128 trades and reached 2,000 TPS through system optimizations.</li>
+                  <li>This system evolved into <a href="https://www.zkrypto.com/service-item" target="_blank">Fineapple</a> by <a href="https://www.zkrypto.com/" target="_blank">zkrypto</a>.</li>
+                  <li>Slides: <a href="https://drive.google.com/file/d/17khmitzqYtUDMdEmbKerkXD0bO1UyU4s/view?usp=drive_link" target="_blank">[PDF]</a></li>
+                </ul>
+              </li>
+
+              <!-- Project 3 -->
+              <li>
+                <strong>Verifiable Voting</strong> (Jun 2024 – Aug 2024)
+                <ul style="margin-left: -20px;">
+                  <li>Conducted as part of the Ethereum PSE Core Contribution Program 2024.</li>
+                  <li>Implemented a Semaphore-style voting circuit using Merkle tree membership and Groth16.</li>
+                  <li>Designed tally verification by integrating a Turbo Plonk custom gate with KZG.</li>
+                  <li>Achieved O(1) verification time for both vote proofs and the final tally.</li>
+                  <li>Slides: <a href="https://drive.google.com/file/d/1ftWNIDGgOWUgBGu-VsC58NE0Eob0R_PT/view?usp=drive_link" target="_blank">[PDF]</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </table>
+
+
+          <hr>
           
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Activity</h2>                  
+              </td>
+              </tr>
+          </tbody>
+          </table>
+
+          <table>
+            <ul style="line-height: 1.6;">
+              <li>
+                <strong>Ethereum PSE Core Contribution Program 2025 (Mentor)</strong>
+                <ul style="margin-left: -20px;">
+                  <li>Mentored participants in research and development of privacy and scaling technologies.</li>
+                  <li>Conducted sessions reviewing foundational papers on Groth16, KZG, PLONK and FRI.</li>
+                  <li>Facilitated special sessions on Circle STARK, FHE, and Privacy-Preserving AI.</li>
+                  <li>Provided hands-on sessions in building zk-SNARK circuits using Noir, Cairo, and Halo2.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Ethereum PSE Core Contribution Program 2024 (Participant)</strong>
+                <ul style="margin-left: -20px;">
+                  <li>Participated in an 8-week study with the PSE team at the Ethereum Foundation.</li>
+                  <li>Studied and analyzed foundational papers on Groth16, PLONK, and FRI.</li>
+                </ul>
+              </li>
+            </ul>
+
+
+          </table>
+
 
           <hr>
 
@@ -146,17 +266,20 @@
           <tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h2>Teaching Assistant</h2>
-                  <ul style="line-height: 1.6;">
+                  <h2>Teaching Assistant</h2>                  
+              </td>
+              </tr>
+          </tbody>
+          </table>
+
+          <table>
+            <ul style="line-height: 1.6;">
                   <li><strong>Embedded Systems for Next Generation Communications</strong>, Fall 2025</li>
                   <li><strong>Data Structure</strong>, Fall 2025</li>
                   <li><strong>Introduction to Programming</strong>, Fall 2025</li>
                   <li><strong>Object-Oriented Programming</strong>, Spring 2024</li>
                   <li><strong>Programming Language</strong>, Spring 2024</li>
                   </ul>
-              </td>
-              </tr>
-          </tbody>
           </table>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
