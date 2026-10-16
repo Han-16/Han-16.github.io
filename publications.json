@@ -1,0 +1,39 @@
+{
+  "preprints": [
+    {
+      "title": "Aegis: Scalable Privacy-preserving CBDC Framework with Dynamic Proof of Liabilities",
+      "authors": [
+        "Gweonho Jeong",
+        "Jaewoong Lee",
+        "Minhae Kim",
+        "Byeongkyu Han",
+        "Jihye Kim",
+        "Hyunok Oh"
+      ],
+      "venue": "",
+      "award": "",
+      "links": {
+        "pdf": "https://eprint.iacr.org/2025/539.pdf"
+      }
+    }
+  ],
+  "publications": [
+    {
+      "title": "LAMP: Linear Verification of Matrix Multiplication via Proximity Testing",
+      "authors": [
+        "Kyeongtae Lee",
+        "Byeongkyu Han",
+        "Jihye Kim",
+        "Hyunok Oh"
+      ],
+      "venue": "S&P 2027",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "pdf": "https://eprint.iacr.org/2026/1571.pdf",
+        "code": "https://github.com/snp-labs/LAMP",
+        "project": ""
+      }
+    }
+  ]
+}
