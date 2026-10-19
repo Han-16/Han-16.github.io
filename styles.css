@@ -339,6 +339,10 @@ section {
   font-size: 0.9rem;
 }
 
+#teaching strong {
+  color: #1f2937;
+}
+
 /* Services and misc */
 .service-title {
   font-weight: 500;
